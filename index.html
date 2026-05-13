@@ -1,139 +1,161 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>The Doctor Lab & Diagnostic Center</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f6f6f6;
-            margin: 0;
-            padding: 0;
-            background-image: url('logo-bg.png');
-            background-size: 60%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            opacity: 0.98;
-        }
-        header {
-            background-color: #005b96;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-        }
-        header img {
-            max-height: 60px;
-            vertical-align: middle;
-        }
-        header h1 {
-            margin: 0.5rem 0 0;
-        }
-        .tagline {
-            background-color: #d4edda;
-            color: #155724;
-            padding: 0.5rem;
-            font-size: 1.2rem;
-        }
-        .container {
-            padding: 2rem;
-            text-align: center;
-        }
-        .card {
-            background: white;
-            padding: 1rem;
-            margin: 1rem auto;
-            max-width: 500px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.1);
-        }
-        .card img {
-            width: 100%;
-            border-radius: 8px;
-        }
-        .card h3 {
-            margin-top: 1rem;
-        }
-        .report-section {
-            margin-top: 3rem;
-            background-color: #e9f0f7;
-            padding: 2rem;
-            border-radius: 8px;
-        }
-        .button {
-            display: inline-block;
-            background-color: #005b96;
-            color: white;
-            padding: 0.75rem 1.5rem;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 1rem;
-        }
-        input[type="file"], input[type="password"] {
-            margin-top: 1rem;
-            padding: 0.5rem;
-            width: 60%;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        .about {
-            background-color: #fff3cd;
-            color: #856404;
-            padding: 1rem;
-            margin: 2rem auto;
-            border-radius: 10px;
-            max-width: 600px;
-            text-align: left;
-        }
-        .footer {
-            background-color: #343a40;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Watanzaib Khan | Microbiology Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="The Doctor's Lab Logo">
-        <h1>The Doctor Lab & Diagnostic Center</h1>
-    </header>
 
-    <div class="tagline">Reliable Diagnostic Solutions</div>
+<!-- INTRO SCREEN -->
+<div id="intro">
+  <div class="microscope"></div>
+  <h1>Watanzaib Khan</h1>
+  <button id="enterBtn">Click to Enter</button>
+</div>
 
-    <div class="container">
-        <div class="about">
-            <h2>About Us</h2>
-            <p>Welcome to The Doctor Lab & Diagnostic Center — your trusted partner in reliable and affordable diagnostic testing. We are committed to your health, offering state-of-the-art laboratory services with expert care and modern equipment.</p>
-        </div>
+<!-- MAIN SITE -->
+<div id="site" class="hidden">
+  <div class="micro-bg">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
 
-        <div class="card">
-            <img src="ad-banner.jpg" alt="Advertisement">
-            <h3>Advertisement</h3>
-        </div>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">Watanzaib Khan</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#certs">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-        <div class="card">
-            <img src="numbrs.png" alt="Contact Numbers">
-            <h3>Contact Numbers</h3>
-        </div>
-
-        <div class="report-section">
-            <h2>Download a Sample Report</h2>
-            <a class="button" href="sample-report.pdf" download>Download Report</a>
-
-            <h2 style="margin-top: 2rem;">Upload Your Report</h2>
-            <p>Please enter password to upload:</p>
-            <input type="password" placeholder="Enter Password" required>
-            <br>
-            <input type="file" name="report-upload" accept=".pdf,.jpg,.png">
-        </div>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>ASST. MICROBIOLOGIST</h2>
+      <p>Dedicated Microbiologist & Laboratory Technician with 7+ years of experience in clinical diagnostics, microbiology, hematology, staining techniques, and lab management.</p>
+      <div class="buttons">
+        <a class="btn whatsapp" href="https://wa.me/923248190013" target="_blank">WhatsApp</a>
+        <a class="btn gmail" href="mailto:watanzaibkhanp2@gmail.com">Gmail</a>
+      </div>
     </div>
-
-    <div class="footer">
-        <p><strong>Address:</strong> Sector 5-J, Main Bazar, Sindhi Hotel Opp. Block 162, New Karachi</p>
-        <p><strong>Phone:</strong> 0346-2549561 | <strong>WhatsApp:</strong> 0314-1246653</p>
-        <p><em>بچت بھی، صحت بھی — آپ کی صحت کی رہنمائی کا نمبر</em></p>
+    <div class="hero-img">
+      <img src="images/pro.jpg" alt="Profile Picture"/>
     </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>Dedicated Microbiologist and Laboratory Technician with 7+ years of hands-on experience in clinical diagnostics, microbiology, hematology, and staining techniques. Skilled in microscopy, bacteriology, parasitology, and handling diverse laboratory procedures. Experienced in both technical work and teaching, with strong communication skills in Pashto, Urdu, and English.</p>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <h2>Work Experience</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>C Lab & Diagnostic Center</h3>
+        <p><strong>Asst. Microbiologist & Lab Tech</strong> (2019 - Present)</p>
+        <ul>
+          <li>2 years in Hematology Dept</li>
+          <li>5 years in Microbiology Dept</li>
+          <li>Performed Gram, Leishman & AFB stains</li>
+          <li>Trained junior staff & students</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Move Diabetic Center</h3>
+        <p><strong>Receptionist & Phlebotomist</strong> (2019)</p>
+        <ul>
+          <li>Sample collection</li>
+          <li>Patient communication</li>
+          <li>Report typing</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Green Star Social Marketing (NGO)</h3>
+        <p><strong>Lab Assistant (TB/AFB)</strong> (2019 - Present)</p>
+        <ul>
+          <li>5+ years TB/AFB diagnostics</li>
+          <li>AFB staining & result validation</li>
+          <li>Record keeping as per WHO standards</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card">Microbiology & Hematology</div>
+      <div class="card">Staining & Microscopy</div>
+      <div class="card">Phlebotomy & Lab Management</div>
+      <div class="card">Media Making & Pouring</div>
+      <div class="card">MS Word, Excel, PowerPoint</div>
+      <div class="card">Photoshop (Basic)</div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <h2>Education</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Intermediate (Pre-Medical)</h3>
+        <p>Defence Intermediate College (Zia Uddin University Board), Karachi (2024 - 2025)</p>
+      </div>
+      <div class="card">
+        <h3>Matriculation (Science)</h3>
+        <p>Iqra Atfal Public School, Karachi (2018 - 2019)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certs" class="section">
+    <h2>Certifications</h2>
+    <div class="grid">
+      <div class="card">Lab Technician Training – Ojha Camp, Dow University (2021)</div>
+      <div class="card">Certificate of Appreciation – Free Mega Medical Camp (2023)</div>
+      <div class="card">3-Day Technician Refresher – PRL Ojha, Dow Univ (2024)</div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section">
+    <h2>Lab Work Gallery</h2>
+    <div class="gallery">
+      <img src="images/lab1.jpg" alt="">
+      <img src="images/lab2.jpg" alt="">
+      <img src="images/lab3.jpg" alt="">
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <div class="card">
+      <p><strong>Phone:</strong> 0324-8190013 / 0317-2440238</p>
+      <p><strong>Email:</strong> watanzaibkhanp2@gmail.com</p>
+      <p><strong>Address:</strong> House No. 8899 ST#10, Gulshan e Ghazi, Block-D, Baldia, Karachi, Sindh</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Watanzaib Khan | Microbiology Portfolio
+  </footer>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
