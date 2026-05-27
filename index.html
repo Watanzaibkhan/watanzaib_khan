@@ -1,253 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Watanzaib Khan | Advanced Microbiology Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watanzaib Khan - Microbiologist Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <!-- LOADING SCREEN -->
-  <div id="loader">
-    <div class="loader-content">
-      <div class="microscope-loader"></div>
-      <h3>Initializing Lab...</h3>
-      <div class="progress-bar">
-        <div class="progress"></div>
-      </div>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="microscope-container">
+            <div class="microscope">
+                <div class="eyepiece"></div>
+                <div class="arm"></div>
+                <div class="stage"></div>
+                <div class="base"></div>
+                <div class="light"></div>
+            </div>
+            <h1 class="loading-name">Watanzaib Khan</h1>
+            <div class="loading-text">Loading Portfolio...</div>
+        </div>
     </div>
-  </div>
 
-  <!-- INTRO SCREEN -->
-  <div id="intro">
-    <div class="intro-content">
-      <div class="microscope-3d"></div>
-      <div class="intro-text">
-        <h1 class="glitch" data-text="Watanzaib Khan">Watanzaib Khan</h1>
-        <h3>Microbiologist Extraordinaire</h3>
-      </div>
-      <button id="enterBtn" class="enter-btn">
-        <span>ENTER LABORATORY</span>
-        <i class="fas fa-arrow-right"></i>
-      </button>
-    </div>
-  </div>
-
-  <!-- MAIN SITE -->
-  <div id="mainSite" class="hidden">
-    <!-- Particles Background -->
-    <div class="particles-container">
-      <canvas id="particlesCanvas"></canvas>
+    <!-- Welcome Animation -->
+    <div id="welcome-animation">
+        <div class="welcome-content">
+            <h1 class="animate-text">Welcome to My Portfolio</h1>
+            <div class="microbe-animation">
+                <div class="microbe"></div>
+                <div class="microbe"></div>
+                <div class="microbe"></div>
+            </div>
+        </div>
     </div>
 
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-      <div class="nav-container">
-        <div class="logo">
-          <i class="fas fa-microscope"></i>
-          <span>WK</span>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><i class="fas fa-microscope"></i><span>WK</span></div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger"><span></span><span></span><span></span></div>
         </div>
-        <ul class="nav-menu">
-          <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
-          <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
-          <li><a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i> Experience</a></li>
-          <li><a href="#skills" class="nav-link"><i class="fas fa-flask"></i> Skills</a></li>
-          <li><a href="#education" class="nav-link"><i class="fas fa-graduation-cap"></i> Education</a></li>
-          <li><a href="#gallery" class="nav-link"><i class="fas fa-images"></i> Gallery</a></li>
-          <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
-        </ul>
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
-      <div class="hero-content">
-        <div class="hero-text" data-aos="fade-right">
-          <div class="badge">ASSISTANT MICROBIOLOGIST</div>
-          <h1 class="hero-title">
-            <span class="gradient-text">Watanzaib</span> Khan
-          </h1>
-          <p class="hero-subtitle">
-            7+ Years in Clinical Diagnostics | Microbiology Expert | Lab Management Specialist
-          </p>
-          <div class="hero-stats">
-            <div class="stat">
-              <h3>7+</h3>
-              <span>Years Experience</span>
-            </div>
-            <div class="stat">
-              <h3>1000+</h3>
-              <span>Samples Analyzed</span>
-            </div>
-            <div class="stat">
-              <h3>5+</h3>
-              <span>Specializations</span>
-            </div>
-          </div>
-          <div class="hero-buttons">
-            <a href="https://wa.me/923248190013" class="btn btn-primary whatsapp" target="_blank">
-              <i class="fab fa-whatsapp"></i> WhatsApp
-            </a>
-            <a href="mailto:watanzaibkhanp2@gmail.com" class="btn btn-secondary">
-              <i class="fas fa-envelope"></i> Email Me
-            </a>
-          </div>
-        </div>
-        <div class="hero-image" data-aos="fade-left">
-          <div class="image-container">
-            <img src="images/pro.jpg" alt="Watanzaib Khan" class="profile-img"/>
-            <div class="image-overlay">
-              <div class="overlay-content">
-                <i class="fas fa-microscope"></i>
-                <span>Microbiologist</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about-section section-padding">
-      <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <span class="section-subtitle">Get To Know</span>
-          <h2 class="section-title">About Me</h2>
-        </div>
-        <div class="about-content">
-          <div class="about-text" data-aos="fade-right">
-            <div class="about-card">
-              <p>Dynamic Microbiologist with 7+ years mastering clinical diagnostics, advanced staining techniques, and laboratory excellence. Passionate about bacteriology, parasitology, and hematology with proven expertise in TB diagnostics and lab management.</p>
-              <div class="about-features">
-                <div class="feature">
-                  <i class="fas fa-flask"></i>
-                  <span>Lab Management</span>
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting">Hello, I'm</span>
+                        <span class="name">Watanzaib Khan</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Assistant Microbiologist</h2>
+                    <p class="hero-description">Dedicated Microbiologist and Laboratory Technician with 7+ years of hands-on experience in clinical diagnostics, microbiology, hematology, and staining techniques. Skilled in microscopy, bacteriology, parasitology, and diverse laboratory procedures.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+                        <a href="#about" class="btn btn-secondary"><i class="fas fa-user"></i> Learn More</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat"><h3>7+</h3><p>Years Experience</p></div>
+                        <div class="stat"><h3>3+</h3><p>Certifications</p></div>
+                        <div class="stat"><h3>15+</h3><p>Students Trained</p></div>
+                    </div>
                 </div>
-                <div class="feature">
-                  <i class="fas fa-microscope"></i>
-                  <span>Microscopy Expert</span>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="images/pro.jpg" alt="Watanzaib Khan">
+                        <div class="image-overlay"></div>
+                    </div>
                 </div>
-                <div class="feature">
-                  <i class="fas fa-language"></i>
-                  <span>Trilingual</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Passionate about Microbiology & Laboratory Sciences</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/lab1.jpg" alt="Laboratory Work">
+                    <div class="experience-badge"><span class="badge-number">7+</span><span class="badge-text">Years Experience</span></div>
                 </div>
-              </div>
+                <div class="about-text">
+                    <p class="about-description">I am a dedicated Microbiologist and Laboratory Technician with over 7 years of hands-on experience in clinical diagnostics, microbiology, hematology, and advanced staining techniques. My expertise spans microscopy, bacteriology, parasitology, and comprehensive laboratory procedures.</p>
+                    <p class="about-description">I have worked extensively in both technical laboratory work and teaching, having supervised training and internships for 12 to 15 students. With strong communication skills in Pashto, Urdu, and English, I excel in collaborative environments.</p>
+                    <div class="about-info">
+                        <div class="info-item"><i class="fas fa-phone"></i><div><span class="info-label">Phone</span><span class="info-value">0324-8190013</span></div></div>
+                        <div class="info-item"><i class="fas fa-envelope"></i><div><span class="info-label">Email</span><span class="info-value">watanzaibkhanp2@gmail.com</span></div></div>
+                        <div class="info-item"><i class="fas fa-map-marker-alt"></i><div><span class="info-label">Location</span><span class="info-value">Karachi, Sindh, Pakistan</span></div></div>
+                        <div class="info-item"><i class="fas fa-language"></i><div><span class="info-label">Languages</span><span class="info-value">Pashto, Urdu, English</span></div></div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="about-image" data-aos="fade-left">
-            <div class="profile-card-3d">
-              <img src="images/pro.jpg" alt="Profile"/>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience-section section-padding">
-      <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <span class="section-subtitle">Professional Journey</span>
-          <h2 class="section-title">Work Experience</h2>
-        </div>
-        <div class="timeline-container">
-          <div class="timeline">
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
-              <div class="timeline-icon">
-                <i class="fas fa-microscope"></i>
-              </div>
-              <div class="timeline-content">
-                <h3>C Lab & Diagnostic Center</h3>
-                <span class="timeline-date">2019 - Present</span>
-                <p class="timeline-role">Asst. Microbiologist & Lab Tech</p>
-                <ul>
-                  <li>5 years Microbiology | 2 years Hematology</li>
-                  <li>Gram, Leishman, AFB staining expert</li>
-                  <li>Staff training & student supervision</li>
-                </ul>
-              </div>
+    <!-- Experience -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-subtitle">My Professional Journey</p>
             </div>
-            <!-- More timeline items... -->
-          </div>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-microscope"></i></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header"><h3>Asst. Microbiologist & Lab Technician</h3><span class="timeline-date">2019 – Present</span></div>
+                        <h4 class="company-name"><i class="fas fa-building"></i> C Lab and Diagnostic Center</h4>
+                        <ul class="timeline-list">
+                            <li>2 years in Hematology Department</li>
+                            <li>5 years in Microbiology Department</li>
+                            <li>Performed Gram stain, Leishman stain, AFB stain</li>
+                            <li>Expertise in microscopy, parasite identification, and culture analysis</li>
+                            <li>Trained junior staff and students</li>
+                            <li>Supervised training &amp; internships of 12–15 students in laboratory practices</li>
+                        </ul>
+                        <div class="timeline-image"><img src="images/lab2.jpg" alt="C Lab Work"></div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-bacteria"></i></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header"><h3>Laboratory Assistant (TB/AFB)</h3><span class="timeline-date">2019 – Present</span></div>
+                        <h4 class="company-name"><i class="fas fa-hands-helping"></i> Green Star Social Marketing with Mercy Corp (NGO)</h4>
+                        <ul class="timeline-list">
+                            <li>5+ years of experience in TB/AFB diagnostics</li>
+                            <li>Performed sputum sample processing and slide preparation</li>
+                            <li>Conducted AFB staining and assisted in result validation</li>
+                            <li>Maintained records and data entry as per WHO reporting standards</li>
+                            <li>Supported NGO health programs with reliable diagnostic services</li>
+                        </ul>
+                        <div class="timeline-image"><img src="images/lab3.jpg" alt="TB Diagnostics"></div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-syringe"></i></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header"><h3>Receptionist & Phlebotomist</h3><span class="timeline-date">2019</span></div>
+                        <h4 class="company-name"><i class="fas fa-hospital"></i> Move Diabetic Center</h4>
+                        <ul class="timeline-list">
+                            <li>Handled sample collection with precision and care</li>
+                            <li>Managed patient communication and front desk operations</li>
+                            <li>Report typing and documentation</li>
+                        </ul>
+                        <div class="timeline-image"><img src="images/lab4.jpg" alt="Move Diabetic Center"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section section-padding">
-      <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <span class="section-subtitle">Core Competencies</span>
-          <h2 class="section-title">Technical Skills</h2>
-        </div>
-        <div class="skills-grid">
-          <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
-            <div class="skill-icon">
-              <i class="fas fa-bacteria"></i>
+    <!-- Skills -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Skills</h2>
+                <p class="section-subtitle">Technical &amp; Laboratory Expertise</p>
             </div>
-            <h3>Microbiology</h3>
-            <div class="skill-bar">
-              <div class="skill-progress" data-width="95%"></div>
+            <div class="skills-grid">
+                <div class="skill-card"><div class="skill-icon"><i class="fas fa-bacteria"></i></div><h3>Microbiology &amp; Hematology</h3><div class="skill-progress"><div class="progress-bar" data-progress="95"></div></div><span class="progress-text">Expert Level — 95%</span></div>
+                <div class="skill-card"><div class="skill-icon"><i class="fas fa-microscope"></i></div><h3>Staining &amp; Microscopy</h3><div class="skill-progress"><div class="progress-bar" data-progress="92"></div></div><span class="progress-text">Advanced — 92%</span></div>
+                <div class="skill-card"><div class="skill-icon"><i class="fas fa-syringe"></i></div><h3>Phlebotomy &amp; Lab Management</h3><div class="skill-progress"><div class="progress-bar" data-progress="88"></div></div><span class="progress-text">Advanced — 88%</span></div>
+                <div class="skill-card"><div class="skill-icon"><i class="fas fa-flask"></i></div><h3>Media Making &amp; Pouring</h3><div class="skill-progress"><div class="progress-bar" data-progress="85"></div></div><span class="progress-text">Proficient — 85%</span></div>
+                <div class="skill-card"><div class="skill-icon"><i class="fas fa-laptop"></i></div><h3>MS Word, Excel, PowerPoint</h3><div class="skill-progress"><div class="progress-bar" data-progress="80"></div></div><span class="progress-text">Proficient — 80%</span></div>
+                <div class="skill-card"><div class="skill-icon"><i class="fas fa-image"></i></div><h3>Photoshop (Basic)</h3><div class="skill-progress"><div class="progress-bar" data-progress="60"></div></div><span class="progress-text">Intermediate — 60%</span></div>
             </div>
-          </div>
-          <!-- More skill cards... -->
         </div>
-      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section section-padding">
-      <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <span class="section-subtitle">Let's Connect</span>
-          <h2 class="section-title">Get In Touch</h2>
-        </div>
-        <div class="contact-content">
-          <div class="contact-info" data-aos="fade-right">
-            <div class="contact-item">
-              <i class="fas fa-phone"></i>
-              <div>
-                <h4>Phone</h4>
-                <p>0324-8190013</p>
-              </div>
+    <!-- Education -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education &amp; Certifications</h2>
+                <p class="section-subtitle">Academic Background &amp; Professional Training</p>
             </div>
-            <!-- More contact items -->
-          </div>
-          <form class="contact-form" data-aos="fade-left">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-          </form>
+            <div class="education-content">
+                <div class="education-cards">
+                    <div class="edu-card"><div class="edu-icon"><i class="fas fa-graduation-cap"></i></div><div class="edu-details"><h3>Intermediate (Pre-Medical)</h3><h4>Defence Intermediate College</h4><p>Zia Uddin University Board, Metroville, Karachi, Sindh</p><span class="edu-year">2024 – 2025</span></div></div>
+                    <div class="edu-card"><div class="edu-icon"><i class="fas fa-school"></i></div><div class="edu-details"><h3>Matriculation (Science)</h3><h4>IQRA ATFAL Public School</h4><p>Karachi, Sindh</p><span class="edu-year">2018 – 2019</span></div></div>
+                </div>
+                <div class="certifications">
+                    <h3 class="cert-title"><i class="fas fa-award"></i> Professional Certifications</h3>
+                    <div class="cert-grid">
+                        <div class="cert-item"><i class="fas fa-certificate"></i><div class="cert-content"><h4>Laboratory Technician Training</h4><p>Ojha Camp, Dow University of Health Sciences</p><span>2021</span></div></div>
+                        <div class="cert-item"><i class="fas fa-certificate"></i><div class="cert-content"><h4>Certificate of Appreciation</h4><p>Free Mega Medical Camp, C Lab Taj Medical Complex</p><span>2023</span></div></div>
+                        <div class="cert-item"><i class="fas fa-certificate"></i><div class="cert-content"><h4>3-Day Technicians Refresher Training</h4><p>PRL Ojha, Dow University of Health Sciences</p><span>2024</span></div></div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Laboratory Gallery</h2>
+                <p class="section-subtitle">Glimpses of My Work</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="images/lab5.jpg" alt="Lab Work 1"><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
+                <div class="gallery-item"><img src="images/lab6.jpg" alt="Lab Work 2"><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
+                <div class="gallery-item"><img src="images/lab7.jpg" alt="Lab Work 3"><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
+                <div class="gallery-item"><img src="images/lab8.jpg" alt="Lab Work 4"><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
+                <div class="gallery-item"><img src="images/lab9.jpg" alt="Lab Work 5"><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
+                <div class="gallery-item"><img src="images/lab10.jpg" alt="Lab Work 6"><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's Connect and Collaborate</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card"><i class="fas fa-phone-alt"></i><h3>Phone</h3><p>0324-8190013</p><p>03172440238</p></div>
+                    <div class="contact-card"><i class="fas fa-envelope"></i><h3>Email</h3><p>watanzaibkhanp2@gmail.com</p></div>
+                    <div class="contact-card"><i class="fas fa-map-marker-alt"></i><h3>Address</h3><p>House No. 8899 ST# 10, Gulshan e ghazi, Block-D, Baldia, Karachi, Sindh</p></div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group"><input type="text" id="name" placeholder="Your Name" required></div>
+                        <div class="form-group"><input type="email" id="email" placeholder="Your Email" required></div>
+                        <div class="form-group"><textarea id="message" rows="5" placeholder="Your Message" required></textarea></div>
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send via WhatsApp</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <p>&copy; 2025 Watanzaib Khan | Master Microbiologist</p>
-          <div class="social-links">
-            <a href="#"><i class="fab fa-whatsapp"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-          </div>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Watanzaib Khan · All Rights Reserved</p>
+                <div class="footer-social">
+                    <a href="https://wa.me/923248190013" class="social-link" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:watanzaibkhanp2@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
         </div>
-      </div>
     </footer>
-  </div>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script src="script.js"></script>
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/923248190013" target="_blank" class="float-btn whatsapp-btn" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:watanzaibkhanp2@gmail.com" class="float-btn email-btn" title="Gmail"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <!-- Scroll Top -->
+    <button id="scrollTop" class="scroll-top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
 </body>
 </html>
